@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# **SeleniumCheck: Blog Frontend Testing with Selenium** ![Intro Image](./assets//Screenshot%20(115).png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### **About**
+**SeleniumCheck** is a blog-based frontend testing project that focuses on automating UI tests using **Selenium WebDriver**. This project ensures that key elements such as blog titles, forms, and links work seamlessly across different browsers. The tests guarantee that the blog functionality, including listing blog posts and creating new entries, is robust, ensuring an optimal user experience.
 
-## Available Scripts
+### **How It Works**
+The project uses **Selenium WebDriver** to automate the interaction with the blog's UI. The following steps are followed during testing:
+1. **Launch Blog Application**: Selenium opens the browser and navigates to the homepage of the blog.
+2. **Verify Blog Titles**: Selenium checks that the correct blog titles are displayed on the homepage by fetching the content and validating it against expected values.
+3. **Form Submission**: The form submission process is tested by automating input into the blog title and content fields and then submitting the form.
+4. **Navigation Testing**: The "Read More" links are verified to ensure they correctly navigate to the blog details page.
 
-In the project directory, you can run:
+Each test case is thoroughly designed to catch issues in the early stages and improve the quality of the blog's frontend.
 
-### `npm start`
+### **Features**
+- **Automated UI Testing**: Test the frontend components of the blog such as blog cards, titles, and form inputs using Selenium.
+- **Cross-Browser Compatibility**: Selenium is configured to run tests across multiple browsers (Chrome, Firefox, etc.).
+- **Responsive Blog Layout**: The blog features a grid layout that adjusts to various screen sizes and is visually appealing.
+- **Form Validation**: Tests ensure that form fields are validated correctly when users try to submit new blogs.
+- **End-to-End Testing**: From loading the homepage to submitting forms and navigating between pages, the test cases cover the complete flow.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### **Difficult Part: New to Test Cases**
+One of the challenges in this project was designing effective test cases for the frontend UI. Since testing user interfaces requires understanding how elements behave dynamically, ensuring that the tests cover real-world scenarios like form validation, page navigation, and content display is crucial. We overcame this by leveraging Selenium’s powerful automation tools, which allowed us to simulate real user interactions and verify results automatically.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **Snapshots**
+#### 1. ** Test Snapshot**
+![Homepage Test](./assets//Screenshot%20(117).png)
 
-### `npm test`
+#### 2. **Form Submission Test Snapshot**
+![Form Submission Test](./assets//Screenshot%20(117).png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **Technologies Used**
+- **React**: The frontend framework used to build the blog application.
+- **Selenium WebDriver**: Used for automating browser interactions and performing UI tests.
+- **Jest**: Used for writing and running JavaScript test cases.
+- **SCSS**: The styling language used for designing the layout and UI elements of the blog.
 
-### `npm run build`
+### **Done at the Time of Making**
+- **Selenium Setup**: Selenium WebDriver was set up for both Chrome and Firefox browsers.
+- **Test Case Development**: Wrote multiple test cases to check the correct functionality of the blog, including homepage blog title checks and form submission.
+- **Form Handling**: Automated tests were built to handle form validation and submission, ensuring user input is correctly processed.
+- **Error Handling**: Implemented error handling to catch any issues during the test runs, ensuring a smooth test process.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **Test Cases in the Frontend**
+- **Blog Title Check**: Ensures the correct blog titles are displayed on the homepage.
+- **Form Submission Test**: Verifies that new blogs can be created by filling out the form and submitting it.
+- **Link Navigation Test**: Checks that the "Read More" links correctly navigate to the respective blog details page.
+- **Responsive Design Test**: Ensures that the layout is responsive and adjusts well across different devices and screen sizes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
